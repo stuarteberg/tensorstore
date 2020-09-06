@@ -7,7 +7,8 @@ build --incompatible_linkopts_to_linklibs
 
 # Configure C++17 mode
 build:linux --copt=-fdiagnostics-color=always --cxxopt=-std=c++17 --cxxopt=-fsized-deallocation
-build:macos --copt=-fdiagnostics-color=always --cxxopt=-std=c++17 --cxxopt=-fsized-deallocation
+build:macos --copt=-fdiagnostics-color=always --cxxopt=-std=c++17 --cxxopt=-fsized-deallocation --macos_sdk_version=10.15
+
 build:freebsd --copt=-fdiagnostics-color=always --cxxopt=-std=c++17 --cxxopt=-fsized-deallocation
 build:windows --cxxopt=/std:c++17
 
