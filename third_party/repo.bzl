@@ -49,8 +49,8 @@ def _third_party_http_archive_impl(ctx):
                   "system_build_file was specified in the repository " +
                   "rule for {name}.").format(name = ctx.attr.name))
         ctx.template(
-            path = "BUILD.bazel",
-            template = ctx.attr.system_build_file,
+            "BUILD.bazel",
+            ctx.attr.system_build_file,
         )
     else:
         if not ctx.attr.urls:
