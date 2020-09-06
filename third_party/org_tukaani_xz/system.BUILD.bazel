@@ -1,5 +1,5 @@
 cc_library(
-    name = "lz4",
-    linkopts = ["-llz4"],
+    name = "liblzma",
+    linkopts = ["-llzma"],
     visibility = ["//visibility:public"],
 )
